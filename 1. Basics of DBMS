@@ -1,0 +1,33 @@
+Q.1 
+What is DBMS?
+DBMS is a collection of programs that facilitates users to create and maintain a database. It is a software in which data is stored in a more secure way as compared to the file-based system. There is the name of some popular Database Management System- MySQL, Oracle, SQL Server, Amazon simple DB (Cloud-based), etc.
+
+Q.2
+What are the advantages of DBMS?
+1. Redundancy control
+2. Restriction for unauthorized access
+3. Provides multiple user interfaces
+4. Provides backup and recovery
+5. Enforces integrity constraints
+6. Ensure data consistency
+7. Easy accessibility
+8. Easy data extraction and data processing due to the use of queries.
+
+Q.3
+What is a checkpoint in DBMS?
+The Checkpoint is a type of mechanism where all the previous logs are removed from the system and permanently stored in the storage disk.
+There are two ways which can help the DBMS in recovering and maintaining the ACID properties, and they are- maintaining the log of each transaction and maintaining shadow pages.
+
+Q.4
+How many types of database languages are?
+There are four types of database languages:
+1. Data Definition Language (DDL) e.g., CREATE, ALTER, DROP, TRUNCATE, RENAME, etc. All these commands are used for updating the data that?s why they are known as Data Definition Language.
+2. Data Manipulation Language (DML) e.g., SELECT, UPDATE, INSERT, DELETE, etc. These commands are used for the manipulation of already updated data that's why they are the part of Data Manipulation Language.
+3. Data Control Language (DCL) e.g., GRANT and REVOKE. These commands are used for giving and removing the user access on the database. So, they are the part of Data Control Language.
+4. Transaction Control Language (TCL) e.g., COMMIT, ROLLBACK, and SAVEPOINT. These are the commands used for managing transactions in the database. TCL is used for managing the changes made by DML.
+
+Q.5
+What are the unary operations in Relational Algebra?
+PROJECTION and SELECTION are the unary operations in relational algebra. Unary operations are those operations which use single operands. Unary operations are SELECTION, PROJECTION, and RENAME.
+As in SELECTION relational operators are used for example - =,<=,>=, etc.
+
