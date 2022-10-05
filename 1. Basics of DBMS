@@ -27,7 +27,7 @@ There are four types of database languages:
 4. Transaction Control Language (TCL) e.g., COMMIT, ROLLBACK, and SAVEPOINT. These are the commands used for managing transactions in the database. TCL is used for managing the changes made by DML.
 
 Q.5
-What are the unary operations in Relational Algebra?
+What are the unary operations in Relational Algebra? 
 PROJECTION and SELECTION are the unary operations in relational algebra. Unary operations are those operations which use single operands. Unary operations are SELECTION, PROJECTION, and RENAME.
 As in SELECTION relational operators are used for example - =,<=,>=, etc.
 
