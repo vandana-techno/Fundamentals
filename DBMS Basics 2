@@ -1,0 +1,43 @@
+Q.1
+What are the disadvantages of file processing systems?
+Inconsistent
+Not secure
+Data redundancy
+Difficult in accessing data
+Data isolation
+Data integrity
+Concurrent access is not possible
+Limited data sharing
+Atomicity problem
+
+Q.2
+What is data abstraction in DBMS?
+Data abstraction in DBMS is a process of hiding irrelevant details from users. Because database systems are made of complex data structures so, it makes accessible the user interaction with the database.
+
+Q.3
+What are the three levels of data abstraction?
+Following are three levels of data abstraction:
+
+Physical level: It is the lowest level of abstraction. It describes how data are stored.
+
+Logical level: It is the next higher level of abstraction. It describes what data are stored in the database and what the relationship among those data is.
+
+View level: It is the highest level of data abstraction. It describes only part of the entire database.
+
+Q.4
+What is DDL (Data Definition Language)?
+Data Definition Language (DDL) is a standard for commands which defines the different structures in a database. Most commonly DDL statements are CREATE, ALTER, and DROP. These commands are used for updating data into the database.
+
+Q.5
+What is DML (Data Manipulation Language)?
+DData Manipulation Language (DML) is a language that enables the user to access or manipulate data as organized by the appropriate data model. For example- SELECT, UPDATE, INSERT, DELETE.
+
+There is two type of DML:
+
+Procedural DML or Low level DML: It requires a user to specify what data are needed and how to get those data.
+
+Non-Procedural DML or High level DML:It requires a user to specify what data are needed without specifying how to get those data.
+
+Q.6
+Explain the functionality of DML Compiler.
+The DML Compiler translates DML statements in a query language that the query evaluation engine can understand. DML Compiler is required because the DML is the family of syntax element which is very similar to the other programming language which requires compilation. So, it is essential to compile the code in the language which query evaluation engine can understand and then work on those queries with proper output.
