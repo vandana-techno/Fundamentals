@@ -1,0 +1,57 @@
+Keys of a relation: There are various types of keys in a relation which are:
+
+Candidate Key: The minimal set of attributes which can determine a tuple uniquely. There can be more than 1 candidate key of a relation and its proper subset can’t determine tuple uniquely and it can’t be NULL.
+
+Super Key: The set of attributes which can determine a tuple uniquely. A candidate key is always a super key but vice versa is not true.
+
+Primary Key and Alternate Key: Among various candidate keys, one key is taken primary key and others are alternate keys.
+
+Foreign Key: Foreign Key is a set of attributes in a table which is used to refer the primary key or alternative key of the same or other table.
+ 
+
+Normal Forms
+
+First Normal Form: A relation is in first normal form if it does not contain any multi-valued or composite attribute.
+
+Second Normal Form: A relation is in second normal form if it does not contain any partial dependency. A dependency is called partial dependency if any proper subset of candidate key determines non-prime (which are not part of candidate key) attribute.
+
+Third Normal Form: A relation is in third normal form if it does not contain any transitive dependency. For a relation to be in Third Normal Form, either LHS of FD should be super key or RHS should be prime attribute.
+
+Boyce-Codd Normal Form: A relation is in Boyce-Codd Normal Form if LHS of every FD is super key. The relationship between Normal Forms can be represented as: 1NF⊃2NF ⊃3NF ⊃BCNF
+
+Basic Operator	Semantic
+σ(Selection)	Select rows based on given condition
+∏(Projection)	Project some columns
+X (Cross Product)	Cross product of relations, returns m*n rows where m and n are number of rows in R1 and R2 respectively.
+U (Union)	Return those tuples which are either in R1 or in R2. Max no. of rows returned = m+n andMin no. of rows returned = max(m,n)
+−(Minus)	R1-R2 returns those tuples which are in R1 but not in R2. Max no. of rows returned = m and Min no. of rows returned = m-n
+ρ(Rename)	Renaming a relation to other relation.
+ 
+
+ 
+
+ 
+
+Extended Operator	Semantic
+∩ (Intersection)	Returns those tuples which are in both R1 and R2. Max no. of rows returned = min(m,n) and Min no. of rows returned = 0
+⋈c(Conditional Join)
+
+Selection from two or more tables based on some condition (Cross product followed by selection)
+⋈(Equi Join)
+
+It is a special case of conditional join when only equality condition is applied between attributes.
+⋈(Natural Join)
+
+In natural join, equality condition on common attributes hold and duplicate attributes are removed by default. Note: Natural Join is equivalent to cross product if two relations have no attribute in common and natural join of a relation R with itself will return R only.
+⟕(Left Outer Join)
+
+When applying join on two relations R and S, some tuples of R or S does not appear in result set which does not satisfy the join conditions. But Left Outer Joins gives all tuples of R in the result set. The tuples of R which do not satisfy join condition will have values as NULL for attributes of S.
+⟖(Right Outer Join)
+
+When applying join on two relations R and S, some tuples of R or S does not appear in result set which does not satisfy the join conditions. But Right Outer Joins gives all tuples of S in the result set. The tuples of S which do not satisfy join condition will have values as NULL for attributes of R.
+⟗(Full Outer Join)
+
+When applying join on two relations R and S, some tuples of R or S does not appear in result set which does not satisfy the join conditions. But Full Outer Joins gives all tuples of S and all tuples of R in the result set. The tuples of S which do not satisfy join condition will have values as NULL for attributes of R and vice versa.
+/(Division Operator)
+
+Division operator A/B will return those tuples in A which is associated with every tuple of B.Note:Attributes of B should be proper subset of attributes of A. The attributes in A/B will be Attributes of A- Attribute of B.
